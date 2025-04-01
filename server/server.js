@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://shop-luxe-d1tey67b0-pranjal-agarwals-projects-7e97c080.vercel.app", "https://shop-luxe-git-main-pranjal-agarwals-projects-7e97c080.vercel.app", "https://shop-luxe-umber.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
